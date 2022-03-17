@@ -17,3 +17,9 @@
     border: 2px solid red;
 
 }
+
+.header {
+    height: 400px;
+    width: 200px;
+    background-color: black;
+}
