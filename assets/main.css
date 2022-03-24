@@ -17,11 +17,6 @@
   border: 2px solid red;
 }
 
-.achtergrond {
-  width: 100%;
-  margin: 0;
-}
-
 header {
   background-image: url("/assets/imgages/friet.jpg");
   background-repeat: no-repeat;
