@@ -1,3 +1,8 @@
+<?php
+require_once("connect.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,10 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="test.php">test</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="test.html">test</a>
+                        <a class="nav-link" href="#">login</a>
                     </li>
 
                     <a class="nav-link disabled" href="#" tabindex="-1" ariDisableda-disabled="true"></a>
@@ -39,7 +47,7 @@
             </div>
         </div>
     </nav>
-    <header>
+    <header> 
         <div class="container">
             <div class="welcome">
                 <h1>feugiat</h1>
@@ -57,7 +65,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="menu col-12 col-lg-4">
                 <table class="w-100">
                     <tr>
                         <td class="w-75">1</td>
@@ -65,7 +73,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="menu col-12 col-lg-4">
                 <table class="w-100">
                     <tr>
                         <td class="w-75">2</td>
@@ -73,7 +81,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="menu col-12 col-lg-4">
                 <table class="w-100">
                     <tr>
                         <td class="w-75">3</td>
