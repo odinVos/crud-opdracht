@@ -39,6 +39,19 @@ header {
   font-weight: 300;
 }
 .menu {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: rgba(0, 0, 0, 0.7);
+
+  color: #fff;
+}
+
+.login {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  color: #fff;
+}
+.login h1 {
+  font-size: 40pt;
 }

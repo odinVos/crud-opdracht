@@ -1,5 +1,6 @@
 <?php
-require_once("connect.php");
+// require_once("connect.php");
+require_once("helpers/dbconfig.php");
 
 ?>
 
@@ -14,72 +15,43 @@ require_once("connect.php");
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="assets/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                    </li>
+    <?php 
+        require_once("components/navigation/customernavbar.php");
+    ?>
+    <header> 
+        <div class="container">
+            <div class="welcome">
+                <h1>feugiat</h1>
+                <hr>
+                <span>
+                    Curabitur venenatis nunc bibendum massa faucibus, id fringilla odio ultricies. Integer scelerisque
+                    consequat urna, a feugiat felis pellentesque vitae. Ut quis porttitor purus. Donec ipsum lorem,
+                    auctor nec mollis ac, porta et orci. Ut eget mi eu orci aliquet maximus eu at massa. Ut pretium sit
+                    amet turpis quis mattis. Sed non eros sit amet dolor commodo tristique. Duis rhoncus velit sit amet
+                    risus maximus congue. Phasellus et nulla id orci finibus vehicula eget ac neque. Morbi ac neque eu
+                    dui maximus gravida. Aliquam pellentesque a turpis quis ornare.
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="test.php">test</a>
-                    </li>
-
-                    <a class="nav-link disabled" href="#" tabindex="-1" ariDisableda-disabled="true"></a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Home</h1>
-                <span>e</span>
+                </span>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <table class="w-100">
-                    <tr>
-                        <td class="w-75">1</td>
-                        <td class="w-25">$ 1,90</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-12 col-lg-4">
-                <table class="w-100">
-                    <tr>
-                        <td class="w-75">2</td>
-                        <td class="w-25">$ 1,90</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-12 col-lg-4">
-                <table class="w-100">
-                    <tr>
-                        <td class="w-75">3</td>
-                        <td class="w-25">$ 1,90</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    </header>
+    <div class="container">
+        <div class="menu row">
+        <?php 
+            require_once("menuItemList.php");
+        ?>
+        </div>  
     </div>
-    </div>
+
+
+
+
 
 
     <script src="/assets/main.js"></script>

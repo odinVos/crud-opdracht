@@ -1,6 +1,9 @@
 <?php
+
+session_start();
+
 $host = 'localhost';
-$db = 'test';
+$db = 'restaurant_db';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
@@ -15,7 +18,11 @@ $opt = [
 try
 {
     $connect = new PDO($dsn, $user, $pass, $opt);   
-    //echo "verbinding is gemaakt.";
+    echo "verbinding is gemaakt.";
+
+    $sql = "SELECT * FROM restaurant_db.menu_items";
+
+   $result = $connect->query($sql);
 }
 
 catch (PDOException $e)
