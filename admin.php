@@ -27,14 +27,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         require_once("components/navigation/adminnavbar.php");
     ?>
     <div class="container">
-    <?php 
-        require_once("components/admin/menutable.php");
-    ?>
+        <?php 
+            require_once("components/admin/menutable.php");
+        ?>
 
+        <div class="mt-3">
+            <p>
+                <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+            </p>
 
-        <p>
-            <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        </p>
+        </div>
     </div>
+
 </body>
 </html>

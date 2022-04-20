@@ -1,5 +1,5 @@
 <?php
-// require_once("connect.php");
+require_once("connect.php");
 session_start();
 require_once("helpers/dbconfig.php");
 
@@ -22,11 +22,7 @@ require_once("helpers/dbconfig.php");
 
 <body>
     <?php 
-    if ($_SESSION['loggedin'] == true){
         require_once("components/navigation/adminnavbar.php");
-    }else {
-        require_once("components/navigation/customernavbar.php");
-    }
     ?>
     <header> 
         <div class="container">
