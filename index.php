@@ -22,7 +22,7 @@ require_once("helpers/dbconfig.php");
 
 <body>
     <?php 
-    if ($_SESSION['loggedin'] == true){
+    if (isset($_SESSION['loggedin'])){
         require_once("components/navigation/adminnavbar.php");
     }else {
         require_once("components/navigation/customernavbar.php");

@@ -14,7 +14,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Not logged in yet
+      <a class="nav-link" href="login.php">Not logged in yet.</a>
       </span>
     </div>
   </div>

@@ -108,9 +108,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
 
 
+
+    <header> 
+        <div class="container">
+            <div class="login">
+                <hr>
+                <h1>login</h1>
+                <hr>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
-        <h2>Login</h2>
+
+
         <p>Please fill in your credentials to login.</p>
+
+
+
 
         <?php 
         if(!empty($login_err)){
