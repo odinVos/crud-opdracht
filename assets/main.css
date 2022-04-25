@@ -47,6 +47,7 @@ header {
 }
 
 .login {
+  padding: 10px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.7);
 
@@ -54,4 +55,21 @@ header {
 }
 .login h1 {
   font-size: 40pt;
+}
+
+@media screen and (max-width: 552px) {
+  .welcome {
+    width: 100%;
+  }
+  .welcome span {
+    font-size: 15px;
+  }
+  .background {
+    width: 100%;
+    height: 100vh;
+  }
+  .background form {
+    display: flex;
+    flex-direction: column;
+  }
 }

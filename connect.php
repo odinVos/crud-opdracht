@@ -17,7 +17,7 @@ $opt = [
 try
 {
     $connect = new PDO($dsn, $user, $pass, $opt);   
-    echo "verbinding is gemaakt.";
+    // echo "verbinding is gemaakt.";
 
     $sql = "SELECT * FROM restaurant_db.menu_items";
 
