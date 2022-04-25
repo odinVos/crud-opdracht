@@ -31,17 +31,12 @@ require_once("helpers/dbconfig.php");
     <header> 
         <div class="container">
             <div class="welcome">
-                <h1>feugiat</h1>
+                <h1>Cafetaria/Lunchroom Diva</h1>
                 <hr>
                 <span>
 
 
-                    Curabitur venenatis nunc bibendum massa faucibus, id fringilla odio ultricies. Integer scelerisque
-                    consequat urna, a feugiat felis pellentesque vitae. Ut quis porttitor purus. Donec ipsum lorem,
-                    auctor nec mollis ac, porta et orci. Ut eget mi eu orci aliquet maximus eu at massa. Ut pretium sit
-                    amet turpis quis mattis. Sed non eros sit amet dolor commodo tristique. Duis rhoncus velit sit amet
-                    risus maximus congue. Phasellus et nulla id orci finibus vehicula eget ac neque. Morbi ac neque eu
-                    dui maximus gravida. Aliquam pellentesque a turpis quis ornare.
+                Bestel nu de lekkerste broodjes, spareribs en snacks bij Cafetaria/Lunchroom Diva in Nijmegen. Altijd vers, met liefde voor u bereid en binnen no time bij u thuis!. U kunt ook eens bij ons langskomen en genieten van ons heerlijke terras onder het genot van een lekkere schepijsje!
 
                 </span>
                 <hr>
@@ -50,6 +45,7 @@ require_once("helpers/dbconfig.php");
     </header>
     <div class="container">
         <div class="menu row">
+            <h1>Menu Kaart</h1>
         <?php 
             require_once("menuItemList.php");
         ?>

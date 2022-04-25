@@ -8,9 +8,9 @@ $result = $stmt->fetchAll();
 ?>
 <table>
     <tr>  
-        <th>Id</th>
-        <th>Name</th>
-        <th>Price</th>
+
+        <th>Menu Item</th>
+        <th>Prijs</th>
     </tr>
 
 <?php
@@ -18,7 +18,7 @@ foreach ($result as $re) { ?>
 
 
     <tr>
-        <td><?php echo $re["Id"]; ?></td>
+
         <td><?php echo $re["Name"]; ?></td>
         <td><?php echo $re["Price"]; ?></td>
 

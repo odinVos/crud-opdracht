@@ -1,7 +1,8 @@
 <?php
 // Initialize the session
 session_start();
- 
+ require_once("helpers/dbconfig.php");
+
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
@@ -26,12 +27,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <?php 
         require_once("components/navigation/adminnavbar.php");
     ?>
+
     <div class="container">
         <?php 
             require_once("components/admin/menutable.php");
         ?>
 
         <div class="mt-3">
+            <p>
+                <a href="newitem.php?id=<?php echo $re["Id"]; ?>">
+                <button class="btn btn-success mx-1"><i class="fa-solid fa-plus"></i> Add new menu item</button></a>
+            </p>
             <p>
                 <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
             </p>
